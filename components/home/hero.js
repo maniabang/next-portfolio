@@ -17,9 +17,12 @@ export default function Hero() {
         </p>
 
         <div className="flex justify-center">
-          <Link href="/projects">
-            <button className="btn-project">프로젝트 보러가기</button>
-          </Link>
+          <a
+            href="https://woolen-ambulance-685.notion.site/9c480cc642b24f5f8d28f891f7e8a581?pvs=4"
+            className="btn-resume"
+          >
+            경력기술서
+          </a>
         </div>
       </div>
       <div>

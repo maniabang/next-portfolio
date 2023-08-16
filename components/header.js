@@ -37,13 +37,6 @@ export default function Header() {
             <Link href="/projects" className="mr-5 hover:text-gray-900">
               Projects
             </Link>
-
-            <a
-              href="https://woolen-ambulance-685.notion.site/9c480cc642b24f5f8d28f891f7e8a581?pvs=4"
-              className="mr-5 hover:text-gray-900"
-            >
-              Résumé
-            </a>
           </nav>
           <DarkModeToggleButton />
         </div>

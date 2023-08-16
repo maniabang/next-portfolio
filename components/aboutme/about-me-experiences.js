@@ -50,8 +50,8 @@ export default function AboutMeExperiences() {
             나의 생각과 보고 들은 것을 독서와 여행의 경험으로 정리하는데 능숙함
           </li>
         </ul>
+        <div className="lg:max-w-lg md:w-1/2 w-5/6"></div>
       </div>
-      <div className="lg:max-w-lg md:w-1/2 w-5/6"></div>
     </>
   );
 }

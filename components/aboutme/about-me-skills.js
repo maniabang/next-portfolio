@@ -42,8 +42,8 @@ export default function AboutMeSkills() {
           <li>Notion 사용에 익숙합니다.</li>
           <li>macOS에 익숙합니다.</li>
         </ul>
+        <div className="lg:max-w-lg md:w-1/2 w-5/6"></div>
       </div>
-      <div className="lg:max-w-lg md:w-1/2 w-5/6"></div>
     </>
   );
 }

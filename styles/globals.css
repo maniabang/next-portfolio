@@ -38,3 +38,7 @@ a {
 p {
   @apply text-slate-500 dark:text-slate-400
 }
+
+ul {
+  @apply text-slate-500 dark:text-slate-400 list-disc pl-6 
+}

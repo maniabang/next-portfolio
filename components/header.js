@@ -27,7 +27,7 @@ export default function Header() {
 
           <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
             <Link href="/" className="mr-5 hover:text-gray-900">
-              홈
+              Home
             </Link>
 
             <Link href="/about-me" className="mr-5 hover:text-gray-900">
@@ -35,14 +35,14 @@ export default function Header() {
             </Link>
 
             <Link href="/projects" className="mr-5 hover:text-gray-900">
-              프로젝트
+              Projects
             </Link>
 
             <a
               href="https://woolen-ambulance-685.notion.site/9c480cc642b24f5f8d28f891f7e8a581?pvs=4"
               className="mr-5 hover:text-gray-900"
             >
-              경력기술서
+              Résumé
             </a>
           </nav>
           <DarkModeToggleButton />

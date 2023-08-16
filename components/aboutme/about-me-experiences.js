@@ -3,18 +3,10 @@ import Image from "next/legacy/image";
 export default function AboutMeExperiences() {
   return (
     <>
-      <div className="lg:flex-grow mt-16 md:w-1/2 md:ml-16 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-        <Image
-          src={
-            "https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F261e7679-3942-4b06-b5d9-7702965c910b%2FImage.jpeg?table=block&id=1488b61c-be4e-43a5-b2fd-30e988857215&spaceId=ba40811f-21c0-4249-a512-9e75d1c965ff&width=2000&userId=c5d3630a-a8cd-46b1-9d83-bbffaf3d0263&cache=v2"
-          }
-          alt="image"
-          width="1291"
-          height="758"
-          quality={100}
-        />
-      </div>
       <div className="lg:flex-grow mt-16 md:ml-16 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+        <h1 className="title-font sm:text-4xl text-3xl mb-16 font-medium text-gray-900">
+          🛫Other Experiences.
+        </h1>
         <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
           Communication.
         </h1>
@@ -51,6 +43,15 @@ export default function AboutMeExperiences() {
           </li>
         </ul>
         <div className="lg:max-w-lg md:w-1/2 w-5/6"></div>
+        <Image
+          src={
+            "https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F261e7679-3942-4b06-b5d9-7702965c910b%2FImage.jpeg?table=block&id=1488b61c-be4e-43a5-b2fd-30e988857215&spaceId=ba40811f-21c0-4249-a512-9e75d1c965ff&width=2000&userId=c5d3630a-a8cd-46b1-9d83-bbffaf3d0263&cache=v2"
+          }
+          alt="image"
+          width="1291"
+          height="758"
+          quality={100}
+        />
       </div>
     </>
   );

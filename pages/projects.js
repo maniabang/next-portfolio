@@ -8,8 +8,15 @@ export default function Projects({ projects }) {
     <Layout>
       <div className="flex flex-col items-center justify-center min-h-screen px-3 mb-10">
         <Head>
-          <title>이광훈의 프로젝트</title>
-          <meta name="description" content="이광훈의 프로젝트" />
+          <title>KHLEE | 프로젝트</title>
+          <meta
+            property="og:description"
+            content="프론트엔드 개발자 이광훈입니다."
+          />
+          <meta
+            property="og:image"
+            content="https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Ffecdaa1d-185f-4658-9cf2-ab0e49f01018%2FIMG_4267.jpg?table=block&id=fd6e98f6-b751-436d-aa62-88fdb427dd02&spaceId=ba40811f-21c0-4249-a512-9e75d1c965ff&width=2000&userId=c5d3630a-a8cd-46b1-9d83-bbffaf3d0263&cache=v2"
+          />
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <h1 className="text-4xl font-bold sm:text-6xl">

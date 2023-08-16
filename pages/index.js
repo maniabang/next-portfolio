@@ -7,9 +7,9 @@ export default function Home() {
   return (
     <Layout>
       <Head>
-        <title>이광훈의 경력기술서</title>
+        <title>KHLEE | 사용자를 고려하는 개발자</title>
         <meta
-          name="description"
+          property="og:description"
           content="프론트엔드 개발자 이광훈입니다."
         />
         <meta

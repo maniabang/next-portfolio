@@ -28,7 +28,7 @@ export default function Home() {
           <Animation />
         </div>
       </section>
-      {width > 1000 ? <></> : <AboutMeHome />}
+      {width > 1100 ? <></> : <AboutMeHome />}
     </Layout>
   );
 }

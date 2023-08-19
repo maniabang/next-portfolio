@@ -32,7 +32,7 @@ export default function Header() {
             <Link href="/" className="mr-5 hover:text-gray-900">
               Home
             </Link>
-            {width > 1000 ? (
+            {width > 1100 ? (
               <Link href="/about-me" className="mr-5 hover:text-gray-900">
                 AboutMe
               </Link>

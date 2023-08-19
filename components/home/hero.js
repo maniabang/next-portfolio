@@ -18,6 +18,7 @@ export default function Hero() {
         <div className="flex justify-center">
           <a
             href="https://woolen-ambulance-685.notion.site/9c480cc642b24f5f8d28f891f7e8a581?pvs=4"
+            target="_blank"
             className="btn-resume"
           >
             경력기술서

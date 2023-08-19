@@ -1,9 +1,13 @@
 import Head from "next/head";
+import AboutMeHome from "../components/home/about-me-home";
 import Animation from "../components/home/animation";
 import Hero from "../components/home/hero";
 import Layout from "../components/layout";
+import useWindowDimension from "../components/utils/customhooks/useWindowDimension";
 
 export default function Home() {
+  const { width } = useWindowDimension();
+
   return (
     <Layout>
       <Head>
@@ -24,6 +28,7 @@ export default function Home() {
           <Animation />
         </div>
       </section>
+      {width > 1000 ? <></> : <AboutMeHome />}
     </Layout>
   );
 }

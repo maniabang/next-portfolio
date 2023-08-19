@@ -1,7 +1,10 @@
 import Link from "next/link";
 import DarkModeToggleButton from "./dark-mode-toggle-button";
+import useWindowDimension from "./utils/customhooks/useWindowDimension";
 
 export default function Header() {
+  const { width } = useWindowDimension();
+
   return (
     <>
       <header className="text-gray-600 body-font">
@@ -29,11 +32,13 @@ export default function Header() {
             <Link href="/" className="mr-5 hover:text-gray-900">
               Home
             </Link>
-
-            <Link href="/about-me" className="mr-5 hover:text-gray-900">
-              AboutMe
-            </Link>
-
+            {width > 1000 ? (
+              <Link href="/about-me" className="mr-5 hover:text-gray-900">
+                AboutMe
+              </Link>
+            ) : (
+              <></>
+            )}
             <Link href="/projects" className="mr-5 hover:text-gray-900">
               Projects
             </Link>

@@ -3,8 +3,8 @@ import { useState, useEffect } from "react";
 function getWindowDimensions() {
   if (typeof window === "undefined") {
     return {
-      width: 100,
-      height: 100,
+      width: 1920,
+      height: 1080,
     };
   }
   const { innerWidth: width, innerHeight: height } = window;
@@ -24,7 +24,10 @@ export default function useWindowDimensions() {
       setWindowDimensions(getWindowDimensions());
     }
 
+    // 이벤트리스너 attach
     window.addEventListener("resize", handleResize);
+
+    // 이벤트리스너 detach
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 

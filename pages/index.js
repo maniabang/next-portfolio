@@ -3,9 +3,11 @@ import AboutMeHome from "../components/home/about-me-home";
 import Animation from "../components/home/animation";
 import Hero from "../components/home/hero";
 import Layout from "../components/layout";
+import ProjectHome from "../components/projects/project-home";
 import useWindowDimension from "../components/utils/customhooks/useWindowDimension";
+import { DATABASE_ID, TOKEN } from "../config";
 
-export default function Home() {
+export default function Home({ projects }) {
   const { width } = useWindowDimension();
 
   return (
@@ -28,7 +30,47 @@ export default function Home() {
           <Animation />
         </div>
       </section>
-      {width > 1100 ? <></> : <AboutMeHome />}
+      {width > 1100 ? (
+        <></>
+      ) : (
+        <>
+          <AboutMeHome />
+          <ProjectHome projects={projects} />
+        </>
+      )}
     </Layout>
   );
+}
+
+// 빌드 타임에 호출
+export async function getStaticProps() {
+  const options = {
+    method: "POST",
+    headers: {
+      accept: "application/json",
+      "Notion-Version": "2022-06-28",
+      "content-type": "application/json",
+      authorization: `Bearer ${TOKEN}`,
+    },
+    body: JSON.stringify({
+      sorts: [
+        {
+          property: "태그",
+          direction: "ascending",
+        },
+      ],
+      page_size: 100,
+    }),
+  };
+
+  const res = await fetch(
+    `https://api.notion.com/v1/databases/${DATABASE_ID}/query`,
+    options
+  );
+
+  const projects = await res.json();
+
+  return {
+    props: { projects },
+  };
 }

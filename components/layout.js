@@ -6,7 +6,7 @@ export default function Layout({ children }) {
     <div className="bg-primary">
       <Header />
       <div>{children}</div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

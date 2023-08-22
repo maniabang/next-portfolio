@@ -8,7 +8,7 @@ export default function Projects({ projects }) {
     <Layout>
       <div className="flex flex-col items-center justify-center min-h-screen px-3 mb-10">
         <Head>
-          <title>KHLEE | 프로젝트</title>
+          <title>KHLEE | 사용자를 고려하는 개발자</title>
           <meta
             property="og:description"
             content="프론트엔드 개발자 이광훈입니다."

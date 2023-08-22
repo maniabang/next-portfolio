@@ -7,7 +7,7 @@ export default function AboutMe() {
   return (
     <Layout>
       <Head>
-        <title>KHLEE | 나는 누구인가?</title>
+        <title>KHLEE | 사용자를 고려하는 개발자</title>
         <meta
           property="og:description"
           content="프론트엔드 개발자 이광훈입니다."

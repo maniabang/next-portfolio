@@ -1,9 +1,9 @@
 import Head from "next/head";
 import Layout from "../components/layout";
-import ProjectItem from "../components/projects/project-item";
+import ProjectItem from "../components/techdiary/project-item";
 import { TOKEN, DATABASE_ID } from "../config";
 
-export default function Projects({ projects }) {
+export default function TechDiary({ techdiary }) {
   return (
     <Layout>
       <div className="flex flex-col items-center justify-center min-h-screen px-3 mb-10">
@@ -21,11 +21,11 @@ export default function Projects({ projects }) {
         </Head>
         <h1 className="text-4xl font-bold sm:text-6xl">
           총 프로젝트 :
-          <span className="pl-4 text-blue-500">{projects.results.length}</span>
+          <span className="pl-4 text-blue-500">{techdiary.results.length}</span>
         </h1>
 
         <div className="grid grid-cols-1 gap-8 py-10 m-6 md:grid-cols-3">
-          {projects.results.map((aProject) => (
+          {techdiary.results.map((aProject) => (
             <ProjectItem key={aProject.id} data={aProject} />
           ))}
         </div>
@@ -60,9 +60,9 @@ export async function getStaticProps() {
     options
   );
 
-  const projects = await res.json();
+  const techdiary = await res.json();
 
   return {
-    props: { projects },
+    props: { techdiary },
   };
 }

@@ -37,8 +37,8 @@ export default function Header() {
                 <Link href="/about-me" className="mr-5 hover:text-gray-900">
                   AboutMe
                 </Link>
-                <Link href="/projects" className="mr-5 hover:text-gray-900">
-                  Projects
+                <Link href="/techdiary" className="mr-5 hover:text-gray-900">
+                  Tech Diary
                 </Link>
               </>
             ) : (

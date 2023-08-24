@@ -3,11 +3,12 @@ import AboutMeHome from "../components/home/about-me-home";
 import Animation from "../components/home/animation";
 import Hero from "../components/home/hero";
 import Layout from "../components/layout";
-import ProjectHome from "../components/projects/project-home";
+import Projects from '../components/projects/projects';
+import TechDiaryHome from '../components/techdiary/techdiary-home';
 import useWindowDimension from "../components/utils/customhooks/useWindowDimension";
 import { DATABASE_ID, TOKEN } from "../config";
 
-export default function Home({ projects }) {
+export default function Home({ techdiary }) {
   const { width } = useWindowDimension();
 
   return (
@@ -31,11 +32,11 @@ export default function Home({ projects }) {
         </div>
       </section>
       {width > 1100 ? (
-        <></>
+        <Projects />
       ) : (
         <>
           <AboutMeHome />
-          <ProjectHome projects={projects} />
+          <TechDiaryHome techdiary={techdiary} />
         </>
       )}
     </Layout>
@@ -68,9 +69,9 @@ export async function getStaticProps() {
     options
   );
 
-  const projects = await res.json();
+  const techdiary = await res.json();
 
   return {
-    props: { projects },
+    props: { techdiary },
   };
 }

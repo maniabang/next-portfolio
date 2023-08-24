@@ -3,8 +3,8 @@ import AboutMeHome from "../components/home/about-me-home";
 import Animation from "../components/home/animation";
 import Hero from "../components/home/hero";
 import Layout from "../components/layout";
-import Projects from '../components/projects/projects';
-import TechDiaryHome from '../components/techdiary/techdiary-home';
+import Projects from "../components/projects/projects";
+import TechDiaryHome from "../components/techdiary/techdiary-home";
 import useWindowDimension from "../components/utils/customhooks/useWindowDimension";
 import { DATABASE_ID, TOKEN } from "../config";
 
@@ -35,6 +35,7 @@ export default function Home({ techdiary }) {
         <Projects />
       ) : (
         <>
+          <Projects />
           <AboutMeHome />
           <TechDiaryHome techdiary={techdiary} />
         </>

@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Layout from "../components/layout";
-import ProjectItem from "../components/techdiary/project-item";
+import TechDiaryItem from "../components/techdiary/techdiary-item";
 import { TOKEN, DATABASE_ID } from "../config";
 
 export default function TechDiary({ techdiary }) {
@@ -26,7 +26,7 @@ export default function TechDiary({ techdiary }) {
 
         <div className="grid grid-cols-1 gap-8 py-10 m-6 md:grid-cols-3">
           {techdiary.results.map((aProject) => (
-            <ProjectItem key={aProject.id} data={aProject} />
+            <TechDiaryItem key={aProject.id} data={aProject} />
           ))}
         </div>
       </div>

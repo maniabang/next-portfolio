@@ -4,7 +4,7 @@ import Animation from "../components/home/animation";
 import Hero from "../components/home/hero";
 import Layout from "../components/layout";
 import Projects from "../components/projects/projects";
-import TechDiaryHome from "../components/techdiary/techdiary-home";
+import TechDiaryHome from "../components/home/techdiary-home";
 import useWindowDimension from "../components/utils/customhooks/useWindowDimension";
 import { DATABASE_ID, TOKEN } from "../config";
 

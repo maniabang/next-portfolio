@@ -1,6 +1,6 @@
 export default function Projects() {
   return (
-    <div className="min-h-screen">
+    <div className="items-center justify-center text-gray-600 body-font">
       <div>
         <div className="p-4">
           <div className="p-4 rounded-md">

@@ -1,4 +1,4 @@
-import TechDiaryItem from "./techdiary-item";
+import TechDiaryItem from "../techdiary/techdiary-item";
 
 export default function TechDiaryHome({ techdiary }) {
   return (

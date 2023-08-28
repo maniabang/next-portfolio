@@ -43,10 +43,20 @@ export default function Header() {
                 >
                   <button>Projects</button>
                 </Link>
-                <Link to="about-me" className="mr-5 hover:text-gray-900">
+                <Link
+                  to="about-me"
+                  smooth={true}
+                  duration={500}
+                  className="mr-5 hover:text-gray-900"
+                >
                   <button>AboutMe</button>
                 </Link>
-                <Link to="techdiary" className="mr-5 hover:text-gray-900">
+                <Link
+                  to="techdiary"
+                  smooth={true}
+                  duration={500}
+                  className="mr-5 hover:text-gray-900"
+                >
                   <button>Tech Diary</button>
                 </Link>
               </>

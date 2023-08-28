@@ -38,7 +38,7 @@ export default function Home({ techdiary }) {
       <section id="about-me">
         <AboutMeHome />
       </section>
-      <section id="projects">
+      <section id="techdiary">
         <TechDiaryHome techdiary={techdiary} />
       </section>
     </Layout>

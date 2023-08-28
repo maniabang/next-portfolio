@@ -31,15 +31,16 @@ export default function Home({ techdiary }) {
           <Animation />
         </div>
       </section>
-      {width > 1100 ? (
+
+      <section id="projects">
         <Projects />
-      ) : (
-        <>
-          <Projects />
-          <AboutMeHome />
-          <TechDiaryHome techdiary={techdiary} />
-        </>
-      )}
+      </section>
+      <section id="about-me">
+        <AboutMeHome />
+      </section>
+      <section id="projects">
+        <TechDiaryHome techdiary={techdiary} />
+      </section>
     </Layout>
   );
 }

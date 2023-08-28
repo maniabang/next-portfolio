@@ -1,7 +1,7 @@
-import Link from "next/link";
+// import Link from "next/link";
 import DarkModeToggleButton from "./dark-mode-toggle-button";
 import useWindowDimension from "./utils/customhooks/useWindowDimension";
-// import { Link } from "react-scroll";
+import { Link } from "react-scroll";
 
 export default function Header() {
   const { width } = useWindowDimension();
@@ -35,28 +35,19 @@ export default function Header() {
             </Link>
             {width > 1100 ? (
               <>
-                {/* <Link
-                  to="Projects"
-                  spy={true}
+                <Link
+                  to="projects"
                   smooth={true}
                   duration={500}
-                  offset={-100}
                   className="mr-5 hover:text-gray-900"
                 >
-                  <button
-                    style={{
-                      width: "-webkit-fill-available",
-                      color: "inherit",
-                    }}
-                  >
-                    Projects
-                  </button>
-                </Link> */}
-                <Link href="/about-me" className="mr-5 hover:text-gray-900">
-                  AboutMe
+                  <button>Projects</button>
                 </Link>
-                <Link href="/techdiary" className="mr-5 hover:text-gray-900">
-                  Tech Diary
+                <Link to="about-me" className="mr-5 hover:text-gray-900">
+                  <button>AboutMe</button>
+                </Link>
+                <Link to="techdiary" className="mr-5 hover:text-gray-900">
+                  <button>Tech Diary</button>
                 </Link>
               </>
             ) : (

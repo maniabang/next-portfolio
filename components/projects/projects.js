@@ -1,6 +1,8 @@
 export default function Projects() {
   return (
-    <div className="container mx-auto items-center justify-center body-font">
+    <div
+      className="container mx-auto items-center justify-center body-font"
+    >
       <div>
         <div className="p-4">
           <div className="p-4 rounded-md">

@@ -29,7 +29,6 @@ export default function Home({ techdiary }) {
         <Hero />
         <Animation />
       </div>
-
       <section id="projects">
         <Projects />
       </section>

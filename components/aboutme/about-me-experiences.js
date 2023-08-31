@@ -48,6 +48,8 @@ export default function AboutMeExperiences() {
           src={
             "https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F261e7679-3942-4b06-b5d9-7702965c910b%2FImage.jpeg?table=block&id=1488b61c-be4e-43a5-b2fd-30e988857215&spaceId=ba40811f-21c0-4249-a512-9e75d1c965ff&width=2000&userId=c5d3630a-a8cd-46b1-9d83-bbffaf3d0263&cache=v2"
           }
+          oncontextmenu="return false"
+          style="-webkit-touch-callout:none"
           alt="image"
           width="1291"
           height="758"

@@ -32,6 +32,7 @@ export default function AboutMeExperiences() {
             여행 블로그 운영 경험, 여행앱 트리플에 &nbsp;
             <a
               href="https://triple.guide/regions/e447ef78-8c4a-41c1-9de4-976e4b85f20d/articles/37380bc6-53ee-4097-8fd5-6486200033db"
+              target="_blank"
               className="btn-link"
             >
               달랏가이드

@@ -12,7 +12,7 @@ export default function AboutMeExperiences() {
         </h1>
         <ul className="mb-8 leading-relaxed">
           <li>
-            휴학을 하는 동안 20개도시를 다녀오며 개방적이고 다양성을 존중하는
+            휴학을 하는 동안 23개도시를 다녀오며 개방적이고 다양성을 존중하는
             유연한 마인드를 가지게 되었습니다.
           </li>
           <li>

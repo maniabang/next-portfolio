@@ -3,7 +3,7 @@ import AboutMeHome from "../components/home/about-me-home";
 import Animation from "../components/home/animation";
 import Hero from "../components/home/hero";
 import Layout from "../components/layout";
-import Projects from "../components/projects/projects";
+// import Projects from "../components/projects/projects";
 import TechDiaryHome from "../components/home/techdiary-home";
 import useWindowDimension from "../components/utils/customhooks/useWindowDimension";
 import { DATABASE_ID, TOKEN } from "../config";
@@ -31,7 +31,7 @@ export default function Home({ techdiary }) {
         <Animation />
       </div>
       <section id="projects">
-        <Projects />
+        {/* <Projects /> */}
       </section>
       <section id="about-me">
         <AboutMeHome />

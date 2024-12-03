@@ -19,10 +19,7 @@ export default function Home({ techdiary }) {
           property="og:description"
           content="프론트엔드 개발자 이광훈입니다."
         />
-        <meta
-          property="og:image"
-          content="IMG_8687_Original.jpg"
-        />
+        <meta property="og:image" content="/IMG_8687_Original.jpg" />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, user-scalable=no"

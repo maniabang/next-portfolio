@@ -45,12 +45,12 @@ export default function AboutMeExperiences() {
         </ul>
         <div className="lg:max-w-lg md:w-1/2 w-5/6"></div>
         <Image
-          src={"IMG_1505.JPG"}
+          src={"/IMG_1505.JPG"}
           oncontextmenu="return false"
           style="-webkit-touch-callout:none"
           alt="image"
-          width="1291"
-          height="758"
+          width={682} 
+          height={908}
           quality={100}
         />
       </div>

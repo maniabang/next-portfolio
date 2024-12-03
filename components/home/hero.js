@@ -27,12 +27,12 @@ export default function Hero() {
       </div>
       <div>
         <Image
-          src={"IMG_8687_Original.jpg"}
+          src={"/IMG_8687_Original.jpg"}
           oncontextmenu="return false"
           style="-webkit-touch-callout:none"
           alt="image"
-          width="568"
-          height="758"
+          width={795}
+          height={1060}
           quality={100}
         />
       </div>

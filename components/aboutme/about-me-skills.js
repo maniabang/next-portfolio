@@ -15,8 +15,9 @@ export default function AboutMeSkills() {
           <li>
             nvm을 사용하여 프로젝트에 맞는 node버전을 제어하고 생성하였습니다.
           </li>
-          <li>npm 보다 yarn의 사용을 선호하는 편입니다.</li>
+          <li>npm 보다 yarn과 pnpm 사용을 선호하는 편입니다.</li>
           <li>ES6+ 환경에 대한 이해도가 있습니다.</li>
+          <li>Vue 사용을 습득 하는중입니다.</li>
         </ul>
 
         <h2 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
@@ -28,7 +29,12 @@ export default function AboutMeSkills() {
             익숙합니다.
           </li>
           <li>커스텀 hooks를 통한 모듈화. </li>
-          <li>Mobx를 이용한 상태관리 라이브러리를 사용하는데 익숙합니다.</li>
+          <li>
+            Mobx 및 Redux를 이용한 전역 상태관리 라이브러리를 사용하는데 익숙합니다.
+          </li>
+          <li>
+            React Query를 이용한 데이터 상태관리 라이브러리를 사용하는데 익숙합니다.
+          </li>
           <li>React-hook-form을 이용한 Form 데이터 관리에 능숙합니다.</li>
           <li>Yup을 이용한 동적 배열 및 데이터 유효성 검증에 능숙합니다.</li>
         </ul>
@@ -36,8 +42,9 @@ export default function AboutMeSkills() {
           Tools.
         </h2>
         <ul className="mb-8 leading-relaxed">
-          <li>Github, Git enterprise 및 Git 형상관리시스템에 익숙합니다.</li>
-          <li>Conﬂuence 및 Jira 사용에 익숙합니다. </li>
+          <li>GitHub, GitLab 및 Git 형상관리시스템에 익숙합니다.</li>
+          <li>GitHub Desktop GUI 사용에 익숙합니다. </li>
+          <li>Conﬂuence를 이용한 문서 작성에 익숙합니다. </li>
           <li>Slack 사용에 익숙합니다.</li>
           <li>Notion 사용에 익숙합니다.</li>
           <li>macOS에 익숙합니다.</li>

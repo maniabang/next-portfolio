@@ -1,5 +1,5 @@
-import AboutMeExperiences from '../aboutme/about-me-experiences';
-import AboutMeSkills from '../aboutme/about-me-skills';
+import AboutMeExperiences from "../aboutme/about-me-experiences";
+import AboutMeSkills from "../aboutme/about-me-skills";
 
 export default function AboutMeHome() {
   return (

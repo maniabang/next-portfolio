@@ -27,7 +27,7 @@ export default function AboutMeExperiences() {
         <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
           Writing.
         </h1>
-        <ul className="mb-8 leading-relaxed">
+        <ul className="mb-2 leading-relaxed">
           <li>
             여행 블로그 운영 경험, 여행앱 트리플에 &nbsp;
             <a
@@ -49,8 +49,8 @@ export default function AboutMeExperiences() {
           oncontextmenu="return false"
           style="-webkit-touch-callout:none"
           alt="image"
-          width={682} 
-          height={908}
+          width={409.2}
+          height={544.8}
           quality={100}
         />
       </div>

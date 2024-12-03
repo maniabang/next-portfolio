@@ -5,11 +5,11 @@ import Hero from "../components/home/hero";
 import Layout from "../components/layout";
 // import Projects from "../components/projects/projects";
 import TechDiaryHome from "../components/home/techdiary-home";
-import useWindowDimension from "../components/utils/customhooks/useWindowDimension";
-import { DATABASE_ID, TOKEN } from "../config";
+// import useWindowDimension from "../components/utils/customhooks/useWindowDimension";
+// import { DATABASE_ID, TOKEN } from "../config";
 
 export default function Home({ techdiary }) {
-  const { width } = useWindowDimension();
+  // const { width } = useWindowDimension();
 
   return (
     <Layout>
@@ -36,42 +36,42 @@ export default function Home({ techdiary }) {
       <section id="about-me">
         <AboutMeHome />
       </section>
-      <section id="techdiary">
+      {/* <section id="techdiary">
         <TechDiaryHome techdiary={techdiary} />
-      </section>
+      </section> */}
     </Layout>
   );
 }
 
 // 빌드 타임에 호출
-export async function getStaticProps() {
-  const options = {
-    method: "POST",
-    headers: {
-      accept: "application/json",
-      "Notion-Version": "2022-06-28",
-      "content-type": "application/json",
-      authorization: `Bearer ${TOKEN}`,
-    },
-    body: JSON.stringify({
-      sorts: [
-        {
-          property: "태그",
-          direction: "ascending",
-        },
-      ],
-      page_size: 100,
-    }),
-  };
+// export async function getStaticProps() {
+//   const options = {
+//     method: "POST",
+//     headers: {
+//       accept: "application/json",
+//       "Notion-Version": "2022-06-28",
+//       "content-type": "application/json",
+//       authorization: `Bearer ${TOKEN}`,
+//     },
+//     body: JSON.stringify({
+//       sorts: [
+//         {
+//           property: "태그",
+//           direction: "ascending",
+//         },
+//       ],
+//       page_size: 100,
+//     }),
+//   };
 
-  const res = await fetch(
-    `https://api.notion.com/v1/databases/${DATABASE_ID}/query`,
-    options
-  );
+//   const res = await fetch(
+//     `https://api.notion.com/v1/databases/${DATABASE_ID}/query`,
+//     options
+//   );
 
-  const techdiary = await res.json();
+//   const techdiary = await res.json();
 
-  return {
-    props: { techdiary },
-  };
-}
+//   return {
+//     props: { techdiary },
+//   };
+// }

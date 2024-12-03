@@ -45,14 +45,14 @@ export default function Header() {
                 >
                   <button>AboutMe</button>
                 </Link>
-                <Link
+                {/* <Link
                   to="techdiary"
                   smooth={true}
                   duration={500}
                   className="mr-5 hover:text-gray-900"
                 >
                   <button>Tech Diary</button>
-                </Link>
+                </Link> */}
               </>
             ) : (
               <></>

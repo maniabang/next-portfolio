@@ -29,14 +29,14 @@ export default function Header() {
           <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
             {width > 1100 ? (
               <>
-                <Link
+                {/* <Link
                   to="projects"
                   smooth={true}
                   duration={500}
                   className="mr-5 hover:text-gray-900"
                 >
                   <button>Projects</button>
-                </Link>
+                </Link> */}
                 <Link
                   to="about-me"
                   smooth={true}
